@@ -10,7 +10,7 @@
 // }
 
 
-const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
+// const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
 
 
-number([[10,0],[3,5],[5,8]]) //5
+// number([[10,0],[3,5],[5,8]]) //5
