@@ -1,12 +1,22 @@
-//13/09/2022
-// var number = function(busStops){
-//   let passengers = 0;
-//     for (let stop of busStops) {
-//     passengers += stop[0] - stop[1]
-//     console.log(stop);
-//   }
-// console.log(passengers);
-// }
+function calculateBtc() {
+  const price = prompt('What is Bitcoin price today?', 'Put value > 0');
+  let testPrice = /^[0-9]+$/g;
+  if (testPrice.test(price)) {
+  } else {
+    alert("Please, put value > 0!");
+    return
+  }
+    
+  const quantity = prompt('How much $ do you have?', 'Put value > 0')
+  let testQuantity = /^[0-9]+$/g;
+  if (testQuantity.test(quantity)) {
+  } else {
+    alert("Please, put value > 0!");
+    return
+  }
+  
+  const btcQuantity = Number(quantity / price).toFixed(7);
+  const message = `You can buy ${btcQuantity} BTC`;
+  alert(message); 
+}
 
-// const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
-// number([[10,0],[3,5],[5,8]]) //5
